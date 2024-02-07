@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --bg1-color: #b2b2b2;
+    --bg2-color: #b2f2b2;
+    --bg3-color: #ffb2b0;
+    --bg4-color: #d4dfb0;
+    --text-color:#000000;
+}
+
+/* utility classes */
+
+.animate.animate{
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+.animate.animate--infinite{
+    animation-iteration-count: infinite;
+}
+
+.animate.animate--delay-1s{
+    animation-delay: 1s;
+}
+
+.animate.animate--fast{
+    animation-duration: 0.6s;
+}
+
+.animate.animate--slow{
+    animation-duration: 0.3s;
+}
+
+
+
+/* amination */
+@keyframes slideInLeft{
+from {
+transform: translateX(-300px);
+}
+
+to {
+    transform: translateX(0);
+}
+}
+
+
+.slideInLeft{
+    animation-name: slideInLeft; 
+    animation-timing-function: 1s ease-in;
+}
+
+
+/* amination */
+@keyframes slideInRight{
+    from {
+    transform: translateX(300px);
+    }
+    
+    to {
+        transform: translateX(0);
+    }
+    }
+    
+    
+    .slideInRight{
+        animation-name: slideInRight; 
+        animation-timing-function: 1s ease-in;
+    }
+    
+
+/* main-container stayle */
+
+.main-container{
+ height: 100vh;
+ scroll-snap-type: y mandatory;
+ overflow-y: scroll;
+}
+
+section{
+    height: 100vh;
+    scroll-snap-align: start;
+}
+
