@@ -3,39 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Amara Saffa Portfolio</title>
+    <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    
-	 <link rel="stylesheet"
-     href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
-   
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
-    
-	<!----header design--->
-	<header>
-		<a href="#" class="logo">Amara<span>S</span>affa</a>
+    <header id="main-header">
+        <a  href="#" class="logo" >Dev<span>S</span>affa</a>
 
-		<ul>
-			<li><a href="#home" class="active">Home</a></li>
-			<li><a href="#about">About Me</a></li>
-			<li><a href="#services">Services</a></li>
-			<li><a href="#portfolio">Portfolio</a></li>
-			<li><a href="#contact">Contact Me</a></li>
-		</ul>
+		<nav>
+            <ul>
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+            </ul>
+        </nav>
 
-		<div class="bx bx-menu" id="menu-icon">
-			
 		</div>
-	</header>
+<!-- menu buttom -->
+        <a href="#side-drawer" id="menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </a>
+    </header>
 
+     
+    <aside id="side-drawer">
+       <header>
+        <a href="#" id="menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </a> 
+       </header>
+    <nav>
+        <ul>
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+        </ul>
+    </nav>
+    </aside>
 
+    <!-- container -->
+<main id="Container">
+    <!-- home-section -->
+    <section class="home" >
+        <div class="home-details">
+            <div class="slide">
+                <span class="one">Hello</span>
+                <span class="two">I'm</span>
+            </div>
+            <h1  class=" animate slideInLeft animate--fast">Amara Saffa</h1>
+            <h3 class=" animate slideInLeft animate--slow">I'm a  front-end | Web developer | <br>  graphics designer | video editor <span>UI/UX Designe.</span></h3>
+            <p  class=" animate slideInLeft animate--fast">Web Developer with 5+ years experience that keep customers  coming back for about services makes best effort.</p>
+            <div class="button">
+                <a href="" class="btn">Dawnload CV</a>
+            </div>
+        </div>
+        <div class="image-container">
+            <img src="/images/PRO.png" alt="">
+        </div>
+        </section> 
+        
+        <!----about section design--->
+	<section class="about" id="about">
+        
+		<div class="about-img">
+			<img src="/images/DSC_0129.jpg">
+		</div>
 
+		<div class="about-text">
+            <h2>About <span>Me</span></h2>
+			<h4>Front-end | Web developer | graphics designer | video editor UI/UX Designer !</h4>
+			<p>Hello! My name is Amara Saffa and I am a frontend web developer and UX/UI designer with a passion for creating intuitive and engaging digital experiences. With over 7 years of experience in the industry, I have a strong foundation in HTML, CSS, and JavaScript, as well as a keen eye for design and usability.
 
-    <div class="main-container">
-       
-       
-    </div>
+				</p>
+			<a href="https://www.facebook.com/frankezekielamara.saffa" class="btn">More About</a>
+		</div>
+	</section>
+</main>
 </body>
 </html>
